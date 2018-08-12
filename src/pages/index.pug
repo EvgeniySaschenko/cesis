@@ -109,7 +109,7 @@ block main
 					+e.BUTTON.btn(class="btn_portfolio _regular") view all
 
 
-	+b.SECTION(style="background-image: url('../img/bg-your-plans.jpg');").section_checkout#checkout
+	+b.SECTION(style="background-image: url('img/bg-your-plans.jpg');").section_checkout#checkout
 		.container
 			+e.row
 				+b.teaser_your-plans
@@ -117,8 +117,9 @@ block main
 					+e.P.text_brief Creating a website has never been this easy with Cesis Theme
 					+e.list-ad
 						+e.list-ad-item
-							+e.I.list-ad-box-img
-								+e.IMG(src="img/planet.png").list-ad-img
+							+e.list-ad-box-icon
+								+e.I.list-ad-icon.icon.icon-planet
+								//+e.IMG(src="img/planet.png").list-ad-img
 							+e.H3.list-ad-title Personal Project
 							+e.UL.list
 								+e.LI.list-option-item Logo Design
@@ -132,8 +133,9 @@ block main
 							+e.BUTTON.btn(class="btn_teaser-your-plans _regular _white") from $999
 
 						+e.list-ad-item.active
-							+e.I.list-ad-box-img
-								+e.IMG(src="img/rocket.png").list-ad-img
+							+e.list-ad-box-icon
+								+e.I.list-ad-icon.icon.icon-rocket
+								//+e.IMG(src="img/rocket.png").list-ad-img
 							+e.H3.list-ad-title Business Project
 							+e.UL.list
 								+e.LI.list-option-item Logo Design
@@ -147,8 +149,9 @@ block main
 							+e.BUTTON.btn(class="btn_teaser-your-plans _regular _white") from $999
 
 						+e.list-ad-item
-							+e.I.list-ad-box-img
-								+e.IMG(src="img/robot.png").list-ad-img
+							+e.list-ad-box-icon
+								+e.I.list-ad-icon.icon.icon-robot
+								//+e.IMG(src="img/robot.png").list-ad-img
 							+e.H3.list-ad-title Exclusive Project
 							+e.UL.list-option
 								+e.LI.list-option-item Logo Design
