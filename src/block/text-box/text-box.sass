@@ -1,0 +1,50 @@
+.text-box
+	@media #{$tablet}
+		br
+			display: none
+	&_contacts
+		max-width: 450px
+		@media #{$tablet}
+			max-width: 100%
+			text-align: center
+		.text-box
+			&__title
+				font-weight: 500
+				margin-bottom: 25px
+				&_small
+					color: $corp-1
+					font-size: 24px
+					display: inline-block
+					margin-bottom: 25px
+					&::before
+						content: ""
+						margin-right: 10px
+						height: 16px
+						width: 2px
+						background-color: $corp-1
+						display: inline-block 
+				&_big
+					font-weight: 500
+					font-size: 80px
+					display: block
+			&__brief
+				font-weight: 300
+				font-size: 18px
+				margin-bottom: 25px
+			&__text
+				font-size: 14px
+				color: $gray
+				margin-bottom: 25px
+
+	&_footer-copyright
+		margin-top: 35px
+		.text-box
+			&__text
+				margin-bottom: 10px
+			&__link
+				color: $black
+				&::after
+					content: "."
+					padding: 15px
+				&:last-child::after
+					display: none

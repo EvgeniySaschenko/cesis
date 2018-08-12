@@ -1,0 +1,48 @@
+.teaser
+	text-align: center
+	color: #ffffff
+	&__title
+		font-size: 80px
+		font-weight: 600
+		margin-bottom: 10px
+	&__text_brief
+		font-size: 18px
+		font-weight: 300
+	&__list-ad
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		&-item
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			margin: 80px 107px 0
+			&.active
+				.teaser
+					&__list-ad
+						&-box-img
+							border: 1px solid #fff
+							border-radius: 50%
+					&__btn
+						background-color: $corp-1
+						border-color: $corp-1
+		&-box-img
+			margin-bottom: 35px
+			padding: 10px
+			display: inline-block
+			font-size: 0
+		&-ad-img
+			height: 128px
+			width: 128px
+		&-title
+			font-size: 24px
+			font-weight: 600
+			margin-bottom: 35px
+	&__list-option
+		&-item
+			line-height: 2
+			&_disabled
+				text-decoration: line-through
+	&__btn
+		margin-bottom: 0

@@ -1,0 +1,247 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+	+b.SECTION.section_about#about
+		+e.row
+			+b.list-article
+				+e.item(style="background-image: url(img/graphic.jpg);")
+					.container
+						+e.row
+							+e.col_1
+								+e.H2.title Let’s make your design great again
+								+e.P.text_brief I build identities and experiences to elevate  & empower organizations.
+								+e.A.btn(href="#" class="btn_list-article _regular") get in touch
+							+e.col_2
+								+e.turbo
+									+e.SPAN.turbo-box-img
+										+e.IMG(src="img/logo.png").turbo-img_logo
+									+e.SPAN.turbo-text reative
+
+				+e.item(style="background-image: url(img/video.jpg);")
+					.container
+						+e.row
+							+e.col_1
+								+e.H2.title Who I am?
+								+e.P.text_brief I build identities and experiences to elevate & empower organizations.
+								+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+								+e.P.text Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab. illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo 
+								+e.A.btn(href="#" class="btn_list-article _regular") get in touch
+							+e.col_2
+								+e.turbo
+									+e.turbo-box-img
+										+e.IMG(src="img/btn-play.png").turbo-img_play
+									+e.turbo-text video
+
+	+b.SECTION.section#portfolio
+		.container
+			+e.row
+				+b.portfolio
+					+e.filter
+						+e.filter-item.active All
+						+e.filter-item Web Design
+						+e.filter-item Interaction
+						+e.filter-item Applications
+						+e.filter-item Branding
+						+e.filter-item Graphic Design
+						+e.filter-item Photography
+
+					+e.list
+						+e.list-item_50
+							+e.IMG(src="img/gallery-1.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Photography
+								+e.H3.list-text_name Canon Microless Pack
+
+						+e.list-item_50
+							+e.IMG(src="img/gallery-2.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Branding
+								+e.H3.list-text_name North Oxford Logo Design
+
+						+e.list-item_50
+							+e.IMG(src="img/gallery-3.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Applications
+								+e.H3.list-text_name North Oxford Gymnastic
+
+						+e.list-item_25
+							+e.IMG(src="img/gallery-4.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Web Design
+								+e.H3.list-text_name Cesis Fashion
+
+						+e.list-item_50
+							+e.IMG(src="img/gallery-5.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Branding
+								+e.H3.list-text_name Kinfolk Brochure
+
+						+e.list-item_25
+							+e.IMG(src="img/gallery-6.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Photography
+								+e.H3.list-text_name Creative Design
+
+						+e.list-item_25
+							+e.IMG(src="img/gallery-7.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Interaction
+								+e.H3.list-text_name Cesis Fashion
+
+						+e.list-item_50
+							+e.IMG(src="img/gallery-8.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Photography
+								+e.H3.list-text_name Crazy Fashion
+
+						+e.list-item_50
+							+e.IMG(src="img/gallery-9.jpg").list-img_bg
+							+e.list-box-text
+								+e.list-text_cat Branding
+								+e.H3.list-text_name Don’t Just Stand There
+
+					+e.BUTTON.btn(class="btn_portfolio _regular") view all
+
+
+	+b.SECTION(style="background-image: url('../img/bg-your-plans.jpg');").section_checkout#checkout
+		.container
+			+e.row
+				+b.teaser_your-plans
+					+e.H2.title Select your plans
+					+e.P.text_brief Creating a website has never been this easy with Cesis Theme
+					+e.list-ad
+						+e.list-ad-item
+							+e.I.list-ad-box-img
+								+e.IMG(src="img/planet.png").list-ad-img
+							+e.H3.list-ad-title Personal Project
+							+e.UL.list
+								+e.LI.list-option-item Logo Design
+								+e.LI.list-option-item_disabled Brochure Template
+								+e.LI.list-option-item Web Design
+								+e.LI.list-option-item_disabled WordPress Development
+								+e.LI.list-option-item_disabled Behance Presentation
+								+e.LI.list-option-item_disabled Dribbble Shots
+								+e.LI.list-option-item 2 Revisions
+								+e.LI.list-option-item Support via Email
+							+e.BUTTON.btn(class="btn_teaser-your-plans _regular _white") from $999
+
+						+e.list-ad-item.active
+							+e.I.list-ad-box-img
+								+e.IMG(src="img/rocket.png").list-ad-img
+							+e.H3.list-ad-title Business Project
+							+e.UL.list
+								+e.LI.list-option-item Logo Design
+								+e.LI.list-option-item Brochure Template
+								+e.LI.list-option-item Web Design
+								+e.LI.list-option-item WordPress Development
+								+e.LI.list-option-item_disabled Behance Presentation
+								+e.LI.list-option-item_disabled Dribbble Shots
+								+e.LI.list-option-item 3 Revisions
+								+e.LI.list-option-item Support via Email
+							+e.BUTTON.btn(class="btn_teaser-your-plans _regular _white") from $999
+
+						+e.list-ad-item
+							+e.I.list-ad-box-img
+								+e.IMG(src="img/robot.png").list-ad-img
+							+e.H3.list-ad-title Exclusive Project
+							+e.UL.list-option
+								+e.LI.list-option-item Logo Design
+								+e.LI.list-option-item Brochure Template
+								+e.LI.list-option-item Web Design
+								+e.LI.list-option-item WordPress Development
+								+e.LI.list-option-item Behance Presentation
+								+e.LI.list-option-item Dribbble Shots
+								+e.LI.list-option-item 6 Revisions
+								+e.LI.list-option-item Support via Email
+							+e.BUTTON.btn(class="btn_teaser-your-plans _regular _white") from $999
+
+	+b.SECTION.section_contacts#contacts
+		.container
+			+e.row_1
+				+e.col_1
+					+b.text-box_contacts
+						+e.H2.title
+							+e.SPAN.title_small TRANMAUTRITAM
+							+e.SPAN.title_big Keep in <br> touch
+						+e.P.brief I build identities and experiences to elevate & empower organizations.
+						+e.P.text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+				+e.col_2
+
+					+b.FORM(action="action.php").form_contacts
+						+e.item
+							+e.INPUT(type="text" name="name" placeholder="Your name").field
+							+e.I.icon.fa.fa-user
+						+e.item
+							+e.INPUT(type="email" name="email" placeholder="Email").field
+							+e.I.icon.fa.fa-envelope
+						+e.item
+							+e.INPUT(type="tel" name="phone" placeholder="Phone").field
+							+e.I.icon.fa.fa-phone
+						+e.item
+							+e.INPUT(type="text" name="text_envato_market" placeholder="Envato Market").field
+							+e.I.icon.fa.fa-hospital-o
+						+e.item_select
+							+e.SELECT(name="looking").select
+								+e.OPTION(disabled="disabled" selected="selected").option What are you looking for? 
+								+e.OPTION(value="1").option option 1
+								+e.OPTION(value="2").option option 2
+								+e.OPTION(value="3").option option 3
+						+e.item
+							+e.INPUT(type="checkbox" name="checkbox_envato_market" id="form_contacts__checkbox_envato-market").checkbox
+							+e.LABEL.label_checkbox(for="form_contacts__checkbox_envato-market")
+							+e.LABEL.label_text(for="form_contacts__checkbox_envato-market") Envato Market
+
+						+e.item
+							+e.INPUT(type="checkbox" name="checkbox_looking" id="form_contacts__checkbox_looking").checkbox
+							+e.LABEL.label_checkbox(for="form_contacts__checkbox_looking")
+							+e.LABEL.label_text(for="form_contacts__checkbox_looking") What are you looking for?
+
+						+e.item
+							+e.INPUT.btn_send(type="submit" value="keep in touch" class="btn_form-contacts _regular")
+		.container
+			+e.row_2
+				+b.contacts
+					+e.item
+						+e.H3.title Postal Address
+						+e.text PO Box 16122 Collins Street West <br> Victoria 8007 Australia
+
+					+e.item
+						+e.H3.title Envato HQ
+						+e.text 121 King Street, Melbourne <br> Victoria 3000 Australia - Map
+
+					+e.item
+						+e.H3.title Business Phone
+						+e.A(href="tel:+61383766284").phone +61 3 8376 6284
+						+e.A(href="tel:+4437890123").phone +44 3 7890 - 123
+
+		+e.row_3
+			+b.social-box_contacts
+				+e.A(href="#").item
+					+e.icon.fa.fa-facebook
+					+e.text Follow us on Behance
+
+				+e.A(href="#").item
+					+e.icon.fa.fa-twitter
+					+e.text Follow us on Twitter
+
+				+e.A(href="#").item
+					+e.icon.fa.fa-behance
+					+e.text Follow us on Behance
+
+				+e.A(href="#").item
+					+e.icon.fa.fa-dribbble
+					+e.text Follow us on Dribbble
+
+				+e.A(href="#").item
+					+e.icon.fa.fa-google
+					+e.text Follow us on Google
+
+				+e.A(href="#").item
+					+e.icon.fa.fa-wordpress
+					+e.text Follow us on Wordpress

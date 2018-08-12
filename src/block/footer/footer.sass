@@ -1,0 +1,28 @@
+.footer
+	width: 100%
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		position: relative
+		&::after
+			content: ""
+			width: 100%
+			margin-top: 100px
+			border-bottom: 10px solid $black
+	&__col
+		flex: 1
+		@media #{$tablet}
+			padding: 0 10px
+		@media #{$phone}
+			flex: none
+			padding: 0
+			width: 100%
+			text-align: center
+		&_2
+			display: flex
+			justify-content: flex-end
+			@media #{$phone}
+				justify-content: center
+				order: -1

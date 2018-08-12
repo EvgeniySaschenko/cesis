@@ -1,0 +1,29 @@
+.contacts
+	width: 100%
+	display: flex
+	justify-content: center
+	flex-wrap: wrap
+	padding: 100px 0
+	border-top: 1px solid $gray-light
+	&__item
+		flex: 1
+		line-height: 1.5
+		@media #{$tablet}
+			text-align: center
+			flex: none
+			width: 50%
+			margin-bottom: 50px
+		@media #{$phone}
+			width: 100%
+	&__title
+		font-size: 30px
+		font-weight: 500
+		margin-bottom: 20px
+	&__text
+		font-size: 18px
+		font-weight: 300
+	&__phone
+		color: $black
+		display: block
+		font-size: 18px
+		font-weight: 300

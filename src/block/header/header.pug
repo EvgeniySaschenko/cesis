@@ -1,0 +1,31 @@
+mixin b-header()
+	+b.HEADER.header(style="background-image: url('../img/bg-header.jpg');")#home
+		+e.row_1
+			+e.col_1
+				+b.A(href="#").logo_header
+					+e.IMG(src="img/logo.png").img
+			+e.col_2
+				+b.BUTTON.btn_burger-header-open(id="btn_burger-header-open" data-id-control="nav__header").fa.fa-bars
+
+				+b.NAV.nav(class="_header" id="nav__header")
+					+e.close
+						+b.BUTTON.btn_burger-header-close(id="btn_burger-header-close" data-id-control="nav__header").fa.fa-close
+					+e.UL.list#nav-list_header
+						+e.LI.item(data-section="home")
+							+e.A.link(href="#home") Home
+						+e.LI.item(data-section="about")
+							+e.A.link(href="#about") About
+						+e.LI.item(data-section="portfolio")
+							+e.A.link(href="#portfolio") Portfolio
+						+e.LI.item(data-section="checkout")
+							+e.A.link(href="#checkout") Checkout
+						+e.LI.item(data-section="contacts")
+							+e.A.link(href="#contacts") Contacts
+		+e.row_2
+			+b.hero
+				+e.H1.text_1 I am Cesis
+				+e.text_2 Let’s make your website Great Again!
+				+e.A.btn(href="#portfolio" class="btn_hero _regular _white" data-section="portfolio")#header-to-portfolio-1 view portfolio
+
+		+e.row_3
+			+b.A.btn_header-to-portfolio(href="#portfolio" data-section="portfolio")#header-to-portfolio-2.fa.fa-angle-down

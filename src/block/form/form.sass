@@ -1,0 +1,90 @@
+.form
+	width: 100%
+	&__item
+		display: flex
+		align-items: center
+		position: relative
+		margin-bottom: 20px
+	&__field
+		flex: 1
+		background-color: transparent
+		padding: 20px
+		padding-left: 0
+		border: 0
+		&::placeholder
+			color: $gray
+			position: relative
+		&:focus	~ .form__icon
+				color: $corp-1
+		&:focus	~ .form__icon::after
+			border-color: $corp-1
+	&__icon
+		color: $gray
+		margin-left: 10px
+		&::after
+			content: ""
+			position: absolute
+			bottom: 0
+			left: 0
+			width: 100%
+			border-bottom: 1px solid $gray-light
+	&__checkbox
+		display: none
+		&:checked ~ .form__label_checkbox
+			border: 0
+			background-image: url(../img/checkbox.png)
+			background-repeat: no-repeat
+	&__label
+		&_checkbox
+			margin-right: 20px
+			height: 26px
+			width: 26px
+			border: 1px solid $gray-light
+	&__select
+		padding: 15px 0
+		border: 0
+		line-height: 30px
+		-webkit-appearance: none
+		-moz-appearance: none
+		text-indent: 0.01px
+		text-overflow: ''
+		-ms-appearance: none
+		appearance: none!important
+		color: $gray
+		width: 100%
+		background-position: right center
+		background-image: url(../img/arrow-down.png)
+		background-repeat: no-repeat
+		cursor: pointer
+	&__option
+		font-size: 20px
+		cursor: pointer
+
+	&_contacts
+		max-width: 480px
+		.form
+			&__btn
+				margin: 30px auto 0
+	&_footer
+		max-width: 500px
+		width: 100%
+		display: inline-block
+		.form
+			&__title
+				font-size: 18px
+				font-weight: 600
+			&__field
+				&:focus	~ .form__btn
+					color: $corp-1
+				&:focus	~ .form__btn::after
+					border-color: $corp-1
+			&__btn
+				background: transparent
+				color: $gray
+				&::after
+					content: ""
+					border-bottom: 1px solid $gray-light
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%

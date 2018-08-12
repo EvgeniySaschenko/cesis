@@ -1,0 +1,29 @@
+.section
+	&__row
+		margin: 100px 0
+		@media #{$tablet}
+			margin: 50px 0
+	&_checkout
+		background-color: $black
+		.section
+			&__row
+				padding: 100px 0
+
+	&_about
+		@media #{$tablet}
+			.container
+				padding: 0
+				
+	&_contacts
+		.container
+			max-width: 1170px
+		.section
+			&__row
+				display: flex
+				flex-wrap: wrap
+			&__col
+				width: 50%
+				@media #{$tablet}
+					display: flex
+					justify-content: center
+					width: 100%

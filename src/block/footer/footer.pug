@@ -1,0 +1,20 @@
+mixin b-footer()
+	+b.FOOTER.footer#footer
+		.container
+			+e.row
+				+e.col_1
+					+b.A(href="#").logo_footer
+						+e.IMG(src="img/logo-footer.png").img
+					+b.text-box_footer-copyright
+						+e.text © 2015 - 2017 Tranmautritam Team. Cesis Creative demo for Cesis WordPress Theme.
+						+e.A(href="#").link Twitter
+						+e.A(href="#").link Instagram
+						+e.A(href="#").link Dribbble
+
+				+e.col_2
+					+b.FORM(action="action.php").form_footer
+						+e.item
+							+e.title Subscribe Newsletter
+						+e.item
+							+e.INPUT(type="email" name="email" placeholder="Enter your email").field
+							+e.BUTTON(type="submit").btn_send.fa.fa-arrow-right

@@ -1,0 +1,92 @@
+.portfolio
+	text-align: center
+	&__filter
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: 100px
+		@media #{$phone}
+			margin-bottom: 50px
+		&-item
+			cursor: pointer
+			padding: 0 20px
+			font-size: 18px
+			font-weight: 500
+			color: $gray
+			@media #{$pc}
+				width: 33%
+				margin-bottom: 20px
+			@media #{$phone}
+				width: 100%
+			&.active
+				color: $black
+	&__list
+		font-size: 0
+		text-align: left
+		@media #{$phone}
+			text-align: center
+		&-item
+			display: inline-block
+			border: 12px solid #ffffff
+			position: relative
+			float: left
+			cursor: pointer
+			@media #{$phone}
+				float: none
+			&::before
+				content: ""
+				position: absolute
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				background-color: trnsparent
+				background-position: center
+				transition: .8s
+				opacity: .3
+			&:hover
+				&::before
+					content: ""
+					background-color: $corp-1
+					background-image: url(../img/logo.png)
+					background-repeat: no-repeat
+					background-position: center
+					transition: .5s
+					width: 100%
+					height: 100%
+					opacity: .8
+					@media #{$phone}
+						background-size: contain
+			&_25
+				width: 25%
+				@media #{$phone}
+					width: 50%
+			&_50
+				width: 50%
+				@media #{$phone}
+					width: 100%
+		&-img
+			display: flex
+			width: 100%
+		&-box-text
+			position: absolute
+			bottom: 50px
+			left: 50px
+			@media #{$tablet}
+				bottom: 30px
+				left: 30px
+			@media #{$phone}
+				width: 100%
+				left: auto
+		&-text
+			color: #ffffff
+			text-shadow: $gray 1px 1px 0, $gray -1px -1px 0, $gray -1px 1px 0, $gray 1px -1px 0
+			&_cat
+				font-size: 18px
+				font-weight: 500
+				margin-bottom: 5px
+			&_name
+				font-size: 24px
+				font-weight: 600
+				@media #{$tablet}
+					font-size: 20px
