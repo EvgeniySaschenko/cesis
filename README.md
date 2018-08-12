@@ -4,4 +4,4 @@
 * **gulp** - запуск проэкта для разработки
 * **npm run build** - сборка проэкта для прододакшина, отличаеться от разрабртки тем что JS, CSS будут минифицированы, а картинки будут сжаты
 
-* https://evgeniysaschenko.github.io/mp3ze/
+* https://evgeniysaschenko.github.io/cesis/
