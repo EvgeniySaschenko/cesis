@@ -29,7 +29,6 @@
 		@media #{$medium-pc}
 			border: 2px solid #ffffff
 			color: #ffffff
-			background-color: rgba($corp-1, .5)
 	&__text
 		margin-bottom: 30px
 		color: $gray
@@ -57,9 +56,11 @@
 		&_1
 			max-width: 500px
 			width: 100%
+			@media #{$medium-pc}
+				background-color: rgba(0, 0, 0, .1)
 			@media #{$tablet}
 				max-width: none
-				margin-top: 30px 
+				margin-top: 30px
 		&_2
 			width: 50%
 			position: relative
@@ -85,10 +86,18 @@
 			font-weight: 600
 			color: #fff
 			line-height: 0
+			transition: .3s
+			&:hover
+				transform: scale(1.1)
+				transition: .3s
 			@media #{$phone}
 				font-size: 40px
 		&-img
 			max-width: none
+			transition: .3s
+			&:hover
+				transform: scale(1.1)
+				transition: .3s
 			@media #{$phone}
 				max-width: 78px
 				margin-right: 20px

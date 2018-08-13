@@ -3,8 +3,10 @@
 	let btnClose= document.getElementById('btn_burger-header-close');
 	let funActiveMenu__item= (event, el)=>{
 		for(let i= 0, l= el.length; l > i; i++){
+			el[i].classList.remove('active');
 			el[i].addEventListener(event, function(){
 				smoothScroll( el[i].getAttribute('data-section') );
+				el[i].classList.add('active');
 				btnClose.click();
 			})
 		}

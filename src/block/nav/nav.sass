@@ -1,26 +1,40 @@
 .nav
-	position: fixed
-	right: -400px
+	position: absolute
+	z-index: -1
+	opacity: 0
 	top: 0
-	max-width: 400px
+	left: 0
 	width: 100%
-	height: 100%
-	background-color: $black
-	z-index: 1000
-	transition: .5s
+	min-height: 100vh
+	background-color: rgba($black, .95)
+	transition: .3s
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	flex-direction: column
+	padding-bottom: 30px
 	&.active
-		right: 0
-		transition: .5s
+		z-index: 1000
+		opacity: 1
+		transition: .3s
 	&__item
 		padding: 12px
-		font-size: 18px
+		font-size: 60px
+		font-weight: 600
+		@media #{$phone}
+			font-size: 40px
+		&.active
+			.nav__link
+				color: $corp-1
 	&__link
 		color: #ffffff
+		&:hover
+			color: $corp-1
 	&__list
 		display: flex
 		flex-direction: column
-		align-items: center
-		margin-top: 40px
+		margin-bottom: 40px
 	&__close
 		position: absolute
 		top: 20px

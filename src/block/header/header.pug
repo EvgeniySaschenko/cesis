@@ -17,10 +17,17 @@ mixin b-header()
 							+e.A.link(href="#about") About
 						+e.LI.item(data-section="portfolio")
 							+e.A.link(href="#portfolio") Portfolio
-						+e.LI.item(data-section="checkout")
-							+e.A.link(href="#checkout") Checkout
+						+e.LI.item(data-section="services")
+							+e.A.link(href="#services") Services
 						+e.LI.item(data-section="contacts")
 							+e.A.link(href="#contacts") Contacts
+					
+					+b.social-btn_nav-header
+						+e.A(href="#").item.fa.fa-twitter
+						+e.A(href="#").item.fa.fa-instagram
+						+e.A(href="#").item.fa.fa-dribbble
+						+e.A(href="#").item.fa.fa-behance
+
 		+e.row_2
 			+b.hero
 				+e.H1.text_1 I am Cesis
