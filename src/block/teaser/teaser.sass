@@ -18,7 +18,9 @@
 			align-items: center
 			justify-content: space-between
 			margin: 80px 107px 0
-			&.active
+			cursor: pointer
+			&:hover
+				transition: .5s
 				.teaser
 					&__list-ad
 						&-box-icon
@@ -32,6 +34,9 @@
 			padding: 10px
 			display: inline-block
 			font-size: 0
+			border: 1px solid transparent
+			border-radius: 50%
+			transition: .5s
 		&-ad-icon
 			height: 128px
 			width: 128px
